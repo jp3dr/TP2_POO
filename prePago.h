@@ -3,7 +3,6 @@
 
 // USER INCLUDES BEGIN
 #include "plano.h"
-#include <iostream>
 #include "date.h"
 // USER INCLUDES END
 
@@ -13,15 +12,14 @@ private:
     double _credito = 0;
     Date _vencimento;
 public:
-    PrePago(unsigned int d, unsigned int m, unsigned int y) { _vencimento._day = d, _vencimento._month = m, _vencimento._year = y; };
+    PrePago(unsigned int d, unsigned int m) { _vencimento._dia = d, _vencimento._mes = m; };
     ~PrePago() {};
 
     double get_credito() { return this->_credito; }
-    unsigned int get_dia_vencimento() { return _vencimento._day; }
-    unsigned int get_mes_vencimento() { return _vencimento._month; }
+    unsigned int get_dia_vencimento() { return _vencimento._dia; }
+    unsigned int get_mes_vencimento() { return _vencimento._mes; }
 
-    void ColocarCreditos(double valor) { this->_credito += valor; }
-
+    void set_credito(double val);
 };
 
 #endif // PRE_PAGO_H

@@ -3,9 +3,9 @@
 
 class Date {
 public:
-    unsigned int _day, _month, _year;
-    Date(unsigned int d, unsigned int m, unsigned int y) {
-        this->_day = d, this->_month = m, this->_year = y;
+    unsigned int _dia, _mes;
+    Date(unsigned int d, unsigned int m) {
+        this->_dia = d, this->_mes = m;
     };
     ~Date() {};
 };
