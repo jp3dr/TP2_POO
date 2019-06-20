@@ -8,7 +8,7 @@
 class LigacaoDados : public Ligacao
 {
 private:
-    double numTelefone;
+    double numTelefon;
 public:
     double get_numTelefone() { return this->numTelefone; }
 };
