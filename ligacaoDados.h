@@ -9,13 +9,13 @@
 class LigacaoDados : public Ligacao
 {
 private:
-    enum tipoDados {download = 0, upload};
+    enum _tipoDados {download = 0, upload};
+    double _down = VELOCIDADE;
+    float _up = VELOCIDADE/10;
 public:
-    //LigacaoDados(Date _dataHora, double _duracao, double _custo, enum _tipoDados) : Ligacao(_dataHora,_duracao,_custo);
-
-};
-//LigacaoDados(Date _dataHora, double _duracao, double _custo, Enum _tipoDados) :
-//tipoDados(_tipoDados){};
+    LigacaoDados(Date _dataHora, double _duracao, enum td):  _duracao(dur), _data(d), _tipoDados(td) {};
+    float get_VelD() { return _down; }
+    float get_VelU() { return _up; }
 //};
 
 #endif // LIGACAO_DADOS_H
