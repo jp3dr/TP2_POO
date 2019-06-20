@@ -25,6 +25,9 @@ void Celular::FazLigacaoSimples(double num, Date d, double dur) {
     // verifica saldo para contas pre pagas
     if (_tipo_pln.get_nome() == "Pre pago" && _tipo_pln.get_credito() < tarifa) {
         throw Erro("Creditos insuficientes");
+    } else if (_tipo_pln.get_nome() == "Pre pago" && _tipo_pln.get_credito() >= tarifa) {
+        _lista_lig.pushback(nova_lig);                  // se pre pago e tem credito
+        this->_tipo_pln.set_credito((tarifa * (-1)));   // registra e abate o valor da tarifa
     } else {
         // caso pos pago, apenas registra a chamada
         _lista_lig.pushback(nova_lig);

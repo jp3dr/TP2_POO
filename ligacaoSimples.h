@@ -5,7 +5,7 @@
 #include "ligacao.h"
 // USER INCLUDES END
 
-class LigacaoDados : public Ligacao
+class LigacaoSimples : public Ligacao
 {
 private:
     double numTelefone;

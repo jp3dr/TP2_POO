@@ -15,7 +15,7 @@ private:
     string _nome;
     double _valor_minuto, _velocidade, _franquia, _veloc_reduz;
 public:
-    // como fazer o construtor dos planos?? cada um tem o seu?? entao como preenche esses campos??
+    // como fazer o construtor dos planos?? cada um tem o seu?? entao como preenche esses campos?
     Plano(string n, double val, double spd, double frq, double spd_red) : _nome(n), _valor_minuto(val), _velocidade(spd), _franquia(frq), _veloc_reduz(spd_red) {};
 
     string get_nome() { return this->_nome; }

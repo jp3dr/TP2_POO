@@ -14,7 +14,7 @@ private:
     Date _data;
     double _duracao, _custo = 5;
 public:
-    Ligacao(double dur, double c, Date d) : _duracao(dur), _data(d); {};
+    Ligacao(double dur, Date d) : _duracao(dur), _data(d); {};
 
     unsigned int get_dia() { return _data._dia; }
     unsigned int get_mes() { return _data._mes; }
