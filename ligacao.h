@@ -1,7 +1,7 @@
 #ifndef LIGACAO_H
 #define LIGACAO_H
 
-static const int VELOCIDADE = 500;
+static const double VELOCIDADE = 10;
 
 // USER INCLUDES BEGIN
 
