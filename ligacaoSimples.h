@@ -12,6 +12,8 @@ private:
     double _numTelefone;
 public:
     LigacaoSimples(double dur, double num, Date d) : _duracao(dur), _data(d), _numTelefone(num) {};
+    ~LigacaoSimples();
+    
     double get_numTelefone() { return this->numTelefone; }
 };
 
